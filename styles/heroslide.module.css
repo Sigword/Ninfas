@@ -1,8 +1,10 @@
 .root {
   position: relative;
-  padding: 16rem 0;
+  min-height: 100vh;
   color: #fff;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .background {
@@ -17,7 +19,12 @@
 }
 
 .background::after {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 44, 44, 0.4) 0%,
+    rgba(44, 44, 44, 0.6) 50%,
+    rgba(44, 44, 44, 0.7) 100%
+  );
   bottom: 0;
   content: "";
   left: 0;
@@ -39,21 +46,49 @@
 }
 
 .root .container {
-  font-size: 2rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   font-weight: normal;
   flex-direction: column;
   align-items: flex-start;
-  font-family: "Libre Baskerville", serif;
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 60rem;
   padding: 0 5vw;
+  z-index: 4;
+  position: relative;
+}
+
+.root .container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.heroWord {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  color: var(--color-sand);
 }
 
 /* Swiper Stuff */
-
 .mySwiper {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: 50rem) {
+  .root .container h1 {
+    font-size: 5rem;
+  }
 }

@@ -8,7 +8,7 @@ export default function Footer() {
     <div className={styles.footerMain}>
       <div className={styles.footerHolder}>
         <div className={styles.footerContact}>
-          <h2>Mama Ninfa’s Missouri City</h2>
+          <h2>Mama Ninfa&apos;s Missouri City</h2>
           <p>
             5730 Hwy 6<br />
             Missouri City, TX 77459
@@ -17,8 +17,9 @@ export default function Footer() {
           </p>
         </div>
         <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
           id="contact-us"
           className={styles.footerMap}
         >
@@ -35,6 +36,9 @@ export default function Footer() {
             />
           </a>
         </motion.div>
+      </div>
+      <div className={styles.copyright}>
+        <p>&copy; {new Date().getFullYear()} Mama Ninfa&apos;s. All rights reserved.</p>
       </div>
     </div>
   );

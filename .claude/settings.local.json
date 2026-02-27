@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(cd /c/Users/umair/Documents/GitHub/Ninfas && node -e \"const p = require\\('./node_modules/next/package.json'\\); console.log\\('next:', p.version\\)\" 2>&1 && node -e \"const p = require\\('./node_modules/react/package.json'\\); console.log\\('react:', p.version\\)\" 2>&1)",
+      "Bash(cd:*)"
+    ]
+  }
+}

@@ -1,27 +1,51 @@
 .aboutMain {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 64, 41);
+  background-color: var(--color-warm-white);
   align-items: center;
-  padding: 100px 0px;
-  background-size: cover;
-  background-image: url("../public/background_image.png");
+  padding: 100px 5vw;
 }
 
 .aboutText {
-  width: 80%;
-  max-width: 1440px;
-  font-size: 32px;
-  font-family: "Libre Baskerville", serif;
-  color: hsla(0, 0%, 85%, 0.6);
+  width: 100%;
+  max-width: 900px;
+  font-size: 1.65rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--color-warm-gray);
   text-align: center;
+  line-height: 1.6;
 }
 
-.aboutUnderline {
-  text-decoration: underline;
-  color: white;
+.aboutHighlight {
+  color: var(--color-terracotta);
+  font-weight: 700;
 }
 
 .aboutLine {
   padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond {
+  width: 12px;
+  height: 12px;
+  background: var(--color-warm-gold);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.diamondLine {
+  width: 60px;
+  height: 2px;
+  background: var(--color-warm-gold);
+  display: inline-block;
+  margin: 0 16px;
+}
+
+@media screen and (max-width: 50rem) {
+  .aboutText {
+    font-size: 1.25rem;
+  }
 }

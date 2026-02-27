@@ -1,39 +1,69 @@
 .homeMenuMain {
-  background-color: #f7f6ef;
+  background-color: var(--color-cream);
+  padding: 80px 5vw;
 }
 
-.homeitem {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+.headingSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.headingSection h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.goldUnderline {
+  width: 80px;
+  height: 3px;
+  background: var(--color-warm-gold);
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
 .container {
   max-width: 80rem;
   width: 100%;
   margin: 0 auto;
-  gap: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 8rem;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  padding-bottom: 2rem;
 }
 
 .container a {
   text-decoration: none;
 }
 
+.homeitem {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-warm-white);
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.3s ease;
+}
+
+.homeitem:hover {
+  box-shadow: var(--shadow-hover);
+}
+
 .homeMenuImage img {
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .homeMenuDesc {
   width: 100%;
-  height: 74.8px;
-  font-size: 21px;
-  background-color: #033e29;
-  color: white;
+  padding: 16px 20px;
+  font-size: 1.05rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  background-color: var(--color-warm-white);
+  color: var(--color-charcoal);
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }

@@ -5,8 +5,9 @@ export default function Button({ children, href }) {
   return (
     <motion.div
       className={styles.orderCon}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+      whileHover={{ y: -3, scale: 1.02 }}
+      whileTap={{ scale: 0.97 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
       <div className={styles.order}>
         <a
